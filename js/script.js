@@ -201,5 +201,5 @@ validateBtn.addEventListener("click", () => {
 
 
 document.getElementById("restart-btn").addEventListener("click", () => {
-    window.location.href = "404.html";
+    window.location.href = "error404";
 });
