@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - La page qui te cherche</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Écran d’intro -->
+    <section id="intro-screen" class="screen active">
+        <h1 class="glitch-text" data-text="Erreur 404 ?">Erreur 404 ?</h1>
+        <p>Je suis cassée... Peux-tu m'aider à me retrouver ?</p>
+        <button id="start-btn">Commencer</button>
+    </section>
+
+    <!-- Fragmentation -->
+    <section id="fragmentation-screen" class="screen hidden">
+        <h2>Fragmentation</h2>
+        <p>Recompose ce que j'étais...</p>
+        <div id="fragment-container"></div>
+        <div id="assembled-word"></div>
+        <button id="fragment-validate" class="hidden">Valider</button>
+    </section>    
+
+    <!-- Mémoire -->
+    <section id="memory-screen" class="screen hidden">
+        <h2>Mémoire floue</h2>
+        <p>Mes souvenirs sont confus… Trouve ceux qui me définissent.</p>
+        <div id="question-container">
+            <!-- Question et choix injectés ici -->
+        </div>
+    </section>    
+
+    <!-- Boucle -->
+    <section id="loop-screen" class="screen hidden">
+        <h2>Déjà vu...</h2>
+        <p>Ce lieu... n'était-il pas différent avant ?</p>
+        <input type="text" id="final-code" placeholder="Entre le mot manquant...">
+        <button id="validate-btn">Valider</button>
+    </section>    
+
+    <!-- Réactivation -->
+    <section id="reactivation-screen" class="screen hidden">
+        <h2>Merci.</h2>
+        <p>Maintenant que tu m’as trouvée… qu’as-tu perdu ?</p>
+        <button id="restart-btn">Recommencer</button>
+    </section>    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
